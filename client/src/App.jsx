@@ -26,7 +26,7 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      const res = await fetch('http://localhost:4444/traffic');
+      const res = await fetch('https://traffic-chart-back.push-ebx.ru/traffic');
       const _data = await res.json();
       setData([["Task", "Hours per Day"], ..._data]);
     })();
